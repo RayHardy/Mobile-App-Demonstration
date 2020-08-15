@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <link href="css/AppStyle.css" rel="stylesheet" type="text/css">
+    <script src="js/code.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div data-role="page" class="new_options" id="log_in" onkeydown="myFunction(event)">
+        <div data-role="header" id="Header">
+            <!-- Open Panel Button -->
+            <h6>Mobile App Title</h6>
+        </div>
+        <div data-role="content" id="page1">
+            <div id="headerPage1">
+                <h5 style="text-align: center; "> version </h5>
+                <h2 style="text-align: center; "> Title </h2>
+                <h5 style="text-align: center; "> subtitle </h5>
+                <h2 style="text-align: center; "> subsubtitle </h2>
+            </div>
+            <div data-role="popup" id="popupBasic4" class="ui-content" data-overlay-theme="a">
+                <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <p> Please place a login name before proceding </p>
+            </div>
+            <div class="ui-field-contain" id="input">
+                <input type="text" id="userName-fc" placeholder="Login ID" value="">
+                <a href="#form-options" data-inline="true" style="float:right" class="ui-btn ui-btn-b ui-corner-all ui-btn-inline" id="btn_login">Login</a>
+            </div>
+            <p></p>
+        </div>
+    </div>
+    <div data-role="page" data-theme="a" class="options" id="form-options">
+        <div data-role="popup" id="overlayPanel7" data-display="reveal" data-position="right" data-theme="b">
+            <!-- panel wrapper -->
+            <ul data-role="listview" data-inset="true">
+                <!-- navigation list -->
+                <li> <a href="#home" data-role="button"> Export Database </a>
+                </li>
+                <li> <a href="#demo1" data-role="button"> Export Data to File </a>
+                </li>
+                <li> <a href="#log_in" data-role="button" class="sign-out">  Sign-out </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="header" data-theme="a" id="Header">
+            <!-- Open Panel Button -->
+            <h6> title </h6>
+            <a href="#overlayPanel7" data-rel="popup" class="ui-btn ui-corner-all ui-icon-gear ui-btn-icon-notext ui-btn-right"></a>
+        </div>
+        <div data-role="content" data-theme="a">
+            <div id="headerPage2">
+                <h2 style="text-align: center; "> title </h2>
+                <h5 style="text-align: center; "> Subtitle </h5>
+                <h2 style="text-align: center; "> Welcome! </h2>
+                <h1 id="nameOfUser" style="text-align: center; "></h1>
+            </div>
+            <div class="ui-field-contain" onkeydown="myFunction2(event)">
+                <h3 style="text-align: left; "> Select New Workflow:</h3>
+                <select name="select-custom-1" data-native-menu="false" id="single">
+                    <option value="select">Please select a workflow... </option>
+                    <option value="workflow1">Workflow 1</option>
+                </select>
+                <a href="#home" id="btn_new_procedure" data-inline="true" class="ui-btn ui-btn-b ui-corner-all " style="float:right">Load New</a>
+            </div>
+            <div data-role="popup" id="popupBasic3" class="ui-content" data-overlay-theme="a">
+                <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+                <p> Please Select a workflow </p>
+            </div>
+            <hr>
+            <div class="ui-field-contain" id="input">
+                <h3 style="text-align: left; "> Load Saved workflow:
+           <a href="#page_procedures" data-inline="true" class="ui-btn ui-btn-b ui-corner-all " style = "float:right">Load Saved</a>
+       </h3>
+            </div>
+            <p></p>
+        </div>
+    </div>
+    <!-- SCOPE PAGE -->
+      
+    <div data-role="page" data-theme="a" id="home2">
+        <!-- PANEL FOR NAVIGATION -->
+        <div data-role="panel" id="overlayPanelASW" data-display="overlay">
+            <h2>Menu</h2>
+            <!-- panel wrapper -->
+            <ul data-role="listview" data-inset="true" style="min-width:100%; padding:0px; margin:0px; background:white !important;">
+                <!-- navigation list -->
+                <li> <a href="#form-options">  Home </a>
+                </li>
+                <li> <a href="#demo1">  Summary </a>
+                </li>
+                <li> <a href="#page_notes">  General Comments </a>
+                </li>
+            </ul>
+        </div>
+        <!-- PANEL FOR SETTINGS -->
+        <div data-role="popup" id="overlayPanelASW2" data-display="reveal" data-position="right" data-theme="b">
+            <!-- panel wrapper -->
+            <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                <!-- navigation list -->
+                <li data-role="list-divider">Settings</li>
+                </li>
+                <li> <a href="#log_in" data-role="button" class="sign-out">  Sign-out</a>
+                </li>
+            </ul>
+        </div>
+        <!-- header for page -->
+        <div data-role="header" data-theme="a" id="Header">
+            <!-- Open Panel Button -->
+            <a href="#overlayPanelASW" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+            <!-- needs to be next to button -->
+            <h6> Workflow 2 </h6>
+            <a href="#overlayPanelASW2" data-rel="popup" class="ui-btn ui-corner-all ui-icon-gear ui-btn-icon-notext ui-shadow ui-btn-inline ui-btn-a"></a>
+        </div>
+        <div data-role="main" class="ui-content" data-theme="a">
+            <ul class=p rocedureList>
+                <p class="preparagraph"> Please press continue to continue to workflow </p>
+                <a href="#procedure_Page2" id="continue2" data-role="button" data-transition="slide"> continue </a>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" class="options" id="procedure_Page2">
+        <div data-role="panel" id="overlayPanel10" data-display="overlay">
+            <h2>Menu</h2>
+            <!-- panel wrapper -->
+            <ul data-role="listview" data-inset="true" style="min-width:100%; padding:0px; margin:0px">
+                <!-- navigation list -->
+                <li> <a href="#form-options">  Home </a>
+                </li>
+                <li> <a href="#demo1">  Summary </a>
+                </li>
+                <li> <a href="#demo1">  Procedure </a>
+                </li>
+                <li> <a href="#page_notes">  General Comments </a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="popup" id="overlayPanel11" data-display="reveal" data-position="right" data-theme="b">
+            <!-- panel wrapper -->
+            <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                <!-- navigation list -->
+                <li data-role="list-divider">Settings</li>
+                <li> <a href="#log_in" data-role="button" class="sign-out">  Sign-out</a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="header" data-theme="a" data-position="fixed">
+            <!-- header section of Demo1 -->
+            <div data-role="header" data-theme="a" id="Header">
+                <!-- Open Panel Button -->
+                <a href="#overlayPanel10" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+                <!-- needs to be next to button -->
+                <h6>Title </h6>
+                <a href="#overlayPanel11" data-rel="popup" class="ui-btn ui-corner-all ui-icon-gear ui-btn-icon-notext ui-shadow ui-btn-inline ui-btn-a"></a>
+            </div>
+            <div data-role="header" id="Header1" data-theme="a">
+                <a href="#popupLogin2" data-rel="popup" data-position-to="window" data-role="button" data-inline="true" data-icon="back" data-transition="pop">Back</a>
+                <h6> <span style = "font-size: small"> title </span></h6>
+                <a href="#page_notes" data-inline="true" style="float:right" class="ui-btn ui-btn-b ui-corner-all ui-btn-inline viewNotes" id="login1">View Notes</a>
+            </div>
+        </div>
+        <div data-role="popup" id="popupMenu1" data-theme="a">
+            <div data-role="popup" id="popupLogin2" data-theme="a" class="ui-corner-all popupLogin" data-overlay-theme="b">
+                <form>
+                    <div style="padding:10px 20px;">
+                        <h3>Please Save workflow</h3>
+                        <label for="un" class="ui-hidden-accessible">Title </label>
+                        <input type="text" name="user" id="save_title1" value="" placeholder="Title" data-theme="a" onkeydown="myFunction3(event)">
+                        <label for="date-2"></label>
+                        <input type="date" data-clear-btn="true" name="date-2" id="save_date1" value="" onkeydown="myFunction3(event)">
+                        <a href="#form-options" class="ui-btn ui-btn-b ui-corner-all" id="save_button1"> Save </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div data-role="popup" id="popupBasic4" class="ui-content" data-overlay-theme="a">
+            <p> Are you sure you want to change the workflow?</p>
+            <button id="change">Change</button>
+            <a href="#procedure_Page" data-role="button" data-theme="a" id="cancel">Cancel</a>
+        </div>
+        <div data-role="popup" id="popupComment" data-theme="a" class="ui-corner-all">
+            <form>
+                <!-- form for comments -->
+                <div style="padding:10px 20px;">
+                    <h3>Comment Here</h3>
+                    <fieldset class="form-group">
+                        <input type="text" id="tf_title2" placeholder="Title" class="title">
+                        <textarea id="tf_content2" placeholder="Content" class="content" rows="5"></textarea>
+                    </fieldset>
+                    <a id="btn_addNote2" href="#pre1" data-role="button" data-inline="true">Add Note</a>
+                    <a href="#procedure_Page2" data-role="button" data-inline="true" id="btn_cancel"> Cancel </a>
+                </div>
+            </form>
+        </div>
+        <ul class="procedureList" id="procedureList2">
+            <div id="openDiv14" class="procedure">
+                <div data-role="content" data-theme="a" id="stepDiv14" class="step">
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <div class="ui-bar ui-bar-e block_a">
+                                <button class="ui-icon-nodisc check" data-role="button" data-iconshadow="false" data-icon="check" data-iconpos="notext" data-inline="true" data-theme="a">No disc or shadow</button>
+                            </div>
+                        </div>
+                        <div class="ui-block-b">
+                            <p class="preparagraph"> Question 1 </p>
+                        </div>
+                        <div class="ui-block-c">
+                            <div class="ui-bar ui-bar-e">
+                                <a href="#popupComment" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-icon-comment ui-btn-icon-notext ui-btn-inline comment10 comment" data-transition="pop" style="float: right">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a"> </div>
+                        <div class="ui-block-b">
+                            <a href="#popupLogin2" data-rel="popup" data-position-to="window" style="float: right" data-role="button" id="buttonPump24" data-theme="a" data-transition="pop" class="button MarkAsComplete"> Mark as Complete </a>
+                        </div>
+                        <p class="text" id="offtext3" style="text-align: center;"> Complete </p>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <div id="page_procedures" data-role="page">
+        <div data-role="header">
+            <a href="#form-options" data-role="button" data-icon="carat-l"> Back </a>
+            <h2> Not Completed</h2>
+        </div>
+        <div class="ui-content">
+            <ul id="list_procedures" data-role="listview">
+                <li><a href="#page_viewprocedure"> workflow </a></li>
+            </ul>
+        </div>
+        <div data-role="header">
+            <h2>Completed</h2>
+        </div>
+        <div class="ui-content">
+            <ul id="list_procedures_complete" data-role="listview">
+                <li><a href="#page_viewprocedure"> workflow </a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="page_notes" data-role="page">
+        <div data-role="header">
+            <a href="#procedure_Page" id="backToProcedure" data-role="button" data-icon="carat-l"> Back </a>
+            <h2> My Notes</h2>
+            <a href="#page_addNote" data-icon="plus" class="ui-btn-right" data-role="button"> Add Note</a>
+        </div>
+        <div class="ui-content">
+            <ul id="list_notes" data-role="listview">
+                <li><a href="#page_viewNote"> Test Note </a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="page_viewNote" data-role="page">
+        <div data-role="header">
+            <a data-rel="back" data-role="button" data-icon="carat-l"> Back </a>
+            <h2> View Note </h2>
+            <a href="#page_editNote" data-role="button" data-icon="edit">edit</a>
+        </div>
+        <div class="ui-content">
+            <h2>Text note</h2>  
+            <p id="p_content">content</p>
+            <!-- Newly edited Location area -->
+            <p id="p_location">Location</p>
+        </div>
+    </div>
+    <div id="page_addNote" data-role="page">
+        <div data-role="header">
+            <a data-rel="back" data-role="button" data-icon="carat-l"> Back </a>
+            <h2> Add Note </h2>
+        </div>
+        <div class="ui-content">
+            <input type="text" id="tf_title1" placeholder="Title">
+            <textarea id="tf_content1" placeholder="Content"></textarea>
+            <input type="text" id="tf_location1" placeholder="Location">
+            <!-- newly edited text input of "Location" -->
+            <a id="btn_addNote1" href="#page_notes" data-role="button">Add Note</a>
+        </div>
+    </div>
+    <div id="page_editNote" data-role="page">
+        <div data-role="header">
+            <a data-rel="back" data-role="button" data-icon="carat-l"> Back </a>
+            <h2> Edit Note </h2>
+            <a id="btn_deleteNote" href="#page_notes" data-role="button" data-icon="delete"> Delete </a>
+        </div>
+        <div class="ui-content">
+            <input type="text" id="tf_title_edit">
+            <textarea id="tf_content_edit"></textarea>
+            <input type="text" id="tf_location_edit">
+            <!-- New included Edit field of location -->
+            <a id="btn_editNote" href="#page_notes" data-role="button">Edit Note</a>
+        </div>
+    </div>
+</body>
+
+</html>

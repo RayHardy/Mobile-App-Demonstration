@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title >App Tutorial</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/code.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script>
+		$(document).ready(function(){ 
+		  $(window).scroll(function() {
+			  $(".slideanim").each(function(){
+				var pos = $(this).offset().top;
+
+				var winTop = $(window).scrollTop();
+				if (pos < winTop + 600) {
+				  $(this).addClass("slide");
+				}
+			  });
+			});
+		})
+</script>
+</head>
+
+<body>
+	
+	<header class="row">
+		 <h1 style= "padding-left: 50px"> <img  src = "images/insertPhotoHere.png" > Mobile Display Website
+		 </h1>
+    </header>
+	
+	<div class="container-fluid">
+		<div class="row content">
+			<div class="col-sm-2 sidenav">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a data-toggle="pill" href="#tutorial">Tutorial</a>
+					</li>
+					<li><a data-toggle="pill" href="#about" >About</a>
+					</li>
+					<li><a data-toggle="pill" href="#contact">Contact</a>
+					</li>
+				</ul>
+				<br>
+			</div>
+		  
+			<div class="tab-content">
+				<div id="tutorial" class="tab-pane fade in active">
+					<div class="col-sm-1">
+						<div class="row" >
+						</div>
+					</div>
+				
+						<div class="col-sm-5" id = "main">
+						<div class="plus-image">
+						<img src="images/ipadBackground.png"  alt="Cinque Terre" id = "ipad">
+							<div class="row plus-image-iframe" id = "iframeDiv">
+								<iframe class="col-sm-10 col-md-offset-1" id="mobile_app" src="App.html" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="about" class="tab-pane fade">
+					<div class="col-sm-10" id = "aboutDiv">
+						<div class="container-fluid section">
+						  <div class="row">
+							<div class="col-sm-7 center" style = "padding-left: 5em">
+							  <h2> Enter Title </h2>
+							  <br>
+							  <h4> <span class="glyphicon glyphicon-minus" ></span> <em> Enter Stuff </em> </h4>
+							  <h4> <span class="glyphicon glyphicon-minus" ></span> <em> Enter Stuff </em> </h4>
+							  <h4> <span class="glyphicon glyphicon-minus" ></span> <em> Enter Stuff </em></h4>
+							</div>
+							<div class="col-sm-2" >
+							  <img src="images/insertPhotoHere.png" class="img-rounded center-block" alt="Cinque Terre" width="400" height="300" >
+							</div>
+						  </div>
+						</div>
+						
+						<div class="container-fluid bg-grey section">
+						  <div class="row">
+							<div class="col-sm-4" style = "padding-left: 5em">
+								<img src="images/insertPhotoHere.png" class="img-rounded center-block" alt="Cinque Terre" width="300" height="300" >
+							</div>
+							<div class="col-sm-8 center" style = "padding-left: 5em">
+								<h2> Enter Title </h2>
+								<br>
+								<h4> <span class="glyphicon glyphicon-minus" ></span> <em>  Enter Stuff  </em></h4>
+								<h4> <span class="glyphicon glyphicon-minus" ></span> <em>  Enter Stuff  </em></h4>
+								<h4> <span class="glyphicon glyphicon-minus" ></span> <em>  Enter Stuff  </em></h4>
+							</div>
+						  </div>
+						</div>
+						
+						<div class="container-fluid section">
+						  <div class="row">
+							<div class="col-sm-7 center">
+							  <h2> Enter Title </h2>
+							  <br>
+							  <h4> <span class="glyphicon glyphicon-minus" ></span> <em> Enter Stuff </em></h4>
+							  <h4> <span class="glyphicon glyphicon-minus" ></span> <em> Enter Stuff </em></h4>
+							  <h4> <span class="glyphicon glyphicon-minus" ></span> <em> Enter Stuff </em></h4>
+							</div>
+							<div class="col-sm-2">
+							  <img src="images/insertPhotoHere.png" class="img-rounded center-block" alt="Cinque Terre" width="350" height="300" >
+							</div>
+						  </div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<div id="contact" class="tab-pane fade">
+					<div class="col-sm-10" id="contactDiv">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-12" >
+									<h1 style = "padding-bottom: 1.5em; text-align: center;"> Our Team </h1>
+								</div>
+							</div>
+						</div>
+					
+						<div class="container-fluid " style = "padding-bottom: 2em">
+							<div class="row">
+								<div class="col-sm-4" >
+									<img src="images/insertPhotoHere.png" class="img-rounded center-block" alt="Cinque Terre" width="150" height="150" >
+								</div>
+								<div class="col-sm-4" >
+									<img src="images/insertPhotoHere.png" class="img-rounded center-block" alt="Cinque Terre" width="150" height="150" >
+								</div>
+								<div class="col-sm-4" >
+									<img src="images/insertPhotoHere.png" class="img-rounded center-block" alt="Cinque Terre" width="150" height="150" >
+								</div>
+							</div>
+						</div>
+					
+						<div class="container-fluid bg-grey" style = "padding: 2em">
+							<div class="row ">
+								<div class="col-sm-4 " style = "text-align:center" >
+									<h3>Person 1 </h3>
+									<p><span class="glyphicon glyphicon-user" ></span> <em> title </em></p>
+									<p><span class="glyphicon glyphicon-phone"></span> phone number </p>
+									<p><span class="glyphicon glyphicon-envelope"></span> email </p> 
+								</div>
+								<div class="col-sm-4" style = "text-align:center">
+									<h3> Person 2 </h3>
+									<p><span class="glyphicon glyphicon-user"></span> <em> title </em></p>
+									<p><span class="glyphicon glyphicon-phone"></span> phone number </p>
+									<p><span class="glyphicon glyphicon-envelope"></span> email </p> 
+								</div>
+								<div class="col-sm-4"  style = "text-align:center">
+									<h3> Person 3 </h3>
+									<p><span class="glyphicon glyphicon-user"></span> <em> title </em></p>
+									<p><span class="glyphicon glyphicon-phone"></span> phone number </p>
+									<p><span class="glyphicon glyphicon-envelope"></span> email </p> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	
+		<footer class="container-fluid">
+			<p>Copyright &copy company</p>
+		</footer>
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+#open1, #open2, #open3, #open4,#open5, #open6, #open7, #open8, #open9, #open10, #open11, #open12  {
+    background-color: white;
+    margin:20px;
+}
+
+.procedure{
+    background-color: white;
+    margin: 20px;
+}
+
+.procedureList {
+    padding: 0;
+    list-style-type: none;
+}
+
+.highlight{
+    border-color: lightblue;
+    border-radius: 5px;
+    border-width: 5px;
+    background-color: white;
+    margin:20px;
+}
+
+.App{
+    border: 30px solid black;
+	border-radius: 10px;
+    font-weight: bold;
+	min-height: 700px;
+	max-height: 700px;
+}
+
+.Guide{
+	background-color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ui-page .ui-header {
+    background-color: #005c99 !important;
+    color:white;
+    border-color:#005c99;
+}
+.ui-page .ui-header .ui-btn {
+    background:#617294 !important ;
+    color:white;
+    border-color:#617294;
+}
+
+.ui-page{
+    background:#efecec !important ;
+}
+
+#procedureList {
+    padding: 0;
+    list-style-type: none;
+}
+
+#Header1{
+    background:black !important ;
+}
+#Header2{
+    background:white !important ;
+    color: black;
+}
+
+#page1{
+    background:#efecec !important ;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+
+.ui-page .ui-panel {
+    background-color:#005c99 !important ;
+    color:white;
+}
+
+/* header style */
+ #header1 {
+    font-size: small;
+}
+/* header2 style*/
+ #header2 {
+    font-size: small;
+    text-align:center;
+}
+/* header3 style */
+ #header3 {
+    font-size: 2px;
+}
+
+#Header3{
+    background:white !important;
+    color: black;
+    border-color:white !important;
+}
+
+#headerPage1{
+    height: 23em;
+}
+
+#input{
+    height: 6em;
+}
+
+#datepicker{
+    text-align:center;    
+}
+
+.new_options{
+    background-color:white;
+}
+
+/* footer style*/
+ #footer {
+    background-color: black;
+}
+/* demo1 style */
+ #demo1 {
+    background-color:#E0E0E0;
+}
+
+#Header{
+    background-color: #E0E0E0;
+}
+
+#Header1{
+    background-color: white;
+}
+
+/* Question 4 style */
+ #Q4 {
+    text-indent:20px;
+}
+/* Question 5 style*/
+ #Q5 {
+    text-indent:20px;
+}
+/* pre2 style */
+ #pre2 {
+    background-color:#F0F0F0;
+    color:#484848;
+    margin:20px;
+    border-width:5px;
+    border-radius:5px;
+    border-color:#989898;
+}
+
+.procedure{
+	border-radius: 12pt;
+}
+
+
+ #open3 {
+    margin-left:50px;
+}
+/* pre4 style */
+ #pre4, #pre8, #pre9, #pre10 {
+    background-color:#F0F0F0;
+    color:#484848;
+    margin:200px;
+    border-width:10px;
+    border-radius:10px;
+    border-color:#989898;
+}
+
+
+#pre5, #pre6, #pre7, #pre11{
+    background-color:#F0F0F0;
+    color:#484848;
+    margin:20px;
+    border-width:10px;
+    border-radius:10px;
+    border-color:#989898;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.preparagraph2{
+    padding-left: 80px;
+    text-indent: -40px;
+}
+
+.preparagraph {
+	padding-left: 30px;
+    text-indent: -30px;
+}
+
+.pre2paragraph {
+    padding-left: 40px;
+    text-indent: -40px;
+}
+
+/* hanging indent for procedure 3 */
+ .pre3paragraph {
+    padding-left: 40px;
+    text-indent: -40px;
+}
+/* hanging indent for procedure 3 */
+ .pre4paragraph {
+    padding-left: 40px;
+    text-indent: -40px;
+}
+
+ .pre5paragraph {
+    padding-left: 40px;
+    text-indent: -40px;
+}
+.pre6paragraph {
+    padding-left: 64px;
+    text-indent: -64px;
+}
+
+.pre7paragraph {
+    padding-left: 64px;
+    text-indent: -64px;
+}
+
+.pre8paragraph {
+    padding-left: 64px;
+    text-indent: -64px;
+}
+
+.pre9paragraph {
+    padding-left: 40px;
+    text-indent: -40px;
+}
+
+.pre10paragraph {
+    padding-left: 40px;
+    text-indent: -40px;
+}
+
+.pre11paragraph {
+    padding-left: 40px;
+    text-indent: -40px;
+    padding-bottom: 0;
+}
+#check1, #check2{
+    float:left;
+}
+
+#check1, #check2, #check3, #check4, #check5, #check6, #check7, #check8, #check9, #check10, #check11{
+    background-color:lightblue;
+}
+
+#Q6MarkAsOff{
+    border-radius: 30px;
+    background-color: #e7e7e7; 
+    color: black;
+}
+
+#MarkAsEnsured{
+    border-radius: 30px;
+    background-color: #e7e7e7; 
+    color: black;
+}
+
+.floating-box {
+    display: inline-block;
+    width: 95%;
+    margin: 5px;
+    margin-top: 0px;
+}
+
+.divisionline{
+    display: inline-block;
+    width: 95%;
+    height: 10px;
+    margin: 10px;
+}
+
+#right{
+    float:right;
+}
+
+#left{
+    float:left;
+}
+
+/* Set 2-column grid to 25/75% */
+.ui-grid-b .ui-block-a {
+  width: 0%;
+}
+
+.ui-grid-b .ui-block-b {
+  width: 100%;
+}
+
+.ui-grid-b .ui-block-c {
+  width: 0%;
+}
+
+.mc-top-margin-1-5 {
+    margin-top:1.5em;
+}
+
+#popupBasic{
+	width: 25em;
+	
+}
+
+.numberInput1 .ui-input-text {
+    width: 125px !important;
+}

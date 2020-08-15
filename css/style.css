@@ -1,0 +1,219 @@
+
+.plus-image{
+    position: relative;
+    width: 450px;
+    height: 200px;
+    left: 5%;
+    top: 3%;
+    /*position: absolute;
+    margin-top: -25px;
+    margin-left: -25px;*/
+}
+
+.plus-image-iframe{
+    position: absolute;
+    top: -10%;
+    left: -8%;
+    right: 0;
+    
+   /* left: 9%;
+    top: 17%;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px;*/
+}
+
+#ipad{
+    height: 50em;
+    width: 41em;
+    padding: 0;
+}
+
+#mobile_app{
+    height: 41em;
+    /*max-height: 45em;*/
+    width: 32.5em;
+    /*width: 35em;*/
+    padding: 0;
+}
+
+ body {
+    font: 24px Helvetica;
+    background: #999999;
+    height:100%;
+}
+
+header {
+    padding: 20px;
+    min-height: 100px;
+    border: 1px solid #000000;
+    border-radius: 3pt;
+    color: #005c99;
+    background-color:rgb(255, 255, 255);
+	font-family: Montserrat, sans-serif;
+}
+header img {
+    width:175px;
+    height:80px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+#site{
+	 width:175px;
+    height:80px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+#appDiv {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#aboutDiv{
+    margin: 25px 0;
+}
+
+.image{
+	text-align: center;
+}
+
+#contactDiv {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#iframeDiv{
+    padding:80px;
+}
+/*#mobile_app {
+    border: 1px solid #000000;
+    border-radius: 15pt;
+    border-width:20px;
+    border-top-width:80px;
+    border-bottom-width:90px;
+    box-shadow: 10px 15px 5px lightgrey;
+    min-height: 45em;
+    max-height: 45em;
+    min-width: 35em;
+    padding: 0;
+}*/
+
+#main{
+    background-image: url("images/ipadBackground.png");
+    color:white;
+    height: 68em;
+    max-width:100%;
+    /*position: relative;
+    display: block;*/
+}
+
+h4{
+	padding-left: 40px;
+}
+
+h2{
+	padding-left: 10px
+}
+
+.section{
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+
+#guide{
+	text-align: center;
+}
+
+#back_image{
+    background-position: center center;
+    height:60px;
+    width:80px;
+    margin-left:170px;
+}
+
+#home_image{
+    height:60px;
+    width:80px;
+    margin-left:60px;
+}
+
+ 
+.sidenav {
+    background-color: #f1f1f1;
+    height: 100em;
+}
+
+.text-left{
+    background-color: #f1f1f1;
+    height:100em;
+}
+
+.nav{
+    padding-top:15px;
+}
+
+ @media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-md-10 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.logo {
+    font-size: 200px;
+}
